@@ -1,0 +1,21 @@
+nav {
+    background-color: #000000; /* Navbar background color */
+    padding: 10px; /* Padding around navbar */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline; /* Display list items inline */
+    margin-right: 10px; /* Add margin between list items */
+  }
+  
+  a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  

@@ -1,0 +1,46 @@
+
+<h1>Payment Details</h1>
+
+
+  <!-- Payment form -->
+  <div class="container">
+  <form #ngForm="ngForm" (ngSubmit)="onSubmit()" action="">
+    <div>
+      <label for="cardHolder">Card Holder:</label>
+      <input type="text" id="cardHolder" [(ngModel)]="form1.cardHolder" name="cardHolder" >
+    </div>
+    <div>
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" [(ngModel)]="form1.cardNumber" name="cardNumber" >
+    </div>
+    <div>
+      <label for="expDate">Expiry Date:</label>
+      <input type="text" id="expDate" [(ngModel)]="form1.expDate" name="expDate">
+    </div>
+    <button id="add" type="submit">Add Payment</button>
+  </form>
+  
+
+    <!-- Payment table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Card Holder</th>
+        <th>Card Number</th>
+        <th>Expiry Date</th>
+        <th>Action</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let payment of PaymentMethods; let i = index">
+        <td>{{ payment.cardHolder }}</td>
+        <td>{{ payment.cardNumber }}</td>
+        <td>{{ payment.expDate }}</td>
+        <td>
+          <button id="delete" (click)="deletePayment(i, payment.paymentId)"><img src="assets/delete.png" height="25" width="25"></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>

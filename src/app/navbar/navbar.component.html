@@ -1,0 +1,15 @@
+<nav>
+    <ul>
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/payment">Payment</a></li>
+      <li>
+        <ng-container *ngIf="isAuth();">
+          <a (click)="logout()">Logout</a>
+        </ng-container>
+        <ng-container *ngIf="!isAuth()">
+          <a routerLink="/login" >Login</a>
+        </ng-container>
+      </li>
+    </ul>
+  </nav>
+  

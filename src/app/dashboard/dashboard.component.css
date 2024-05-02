@@ -1,0 +1,144 @@
+/* Header section styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f2f2f2;
+}
+
+.welcome {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.emp-info {
+  display: flex;
+  align-items: center;
+}
+
+.emp-info table {
+  border-collapse: collapse;
+  margin-left: 1rem;
+}
+
+.emp-info th,
+.emp-info td {
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+/* Content section styling */
+.content {
+  padding: 1rem;
+  text-shadow: #333;
+  display: flex;
+}
+
+.policies {
+  margin-bottom: 1rem;
+}
+
+.policy {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  width: 150%;
+}
+
+.policy-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.policy-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+.left div {
+  margin-bottom: 0.5rem;
+}
+
+.explanation p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contacts {
+  justify-content: space-between;
+}
+
+.help-center{
+  flex: 1;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+  margin-left: 300px;
+  width: 50%;
+  
+
+}
+.social-media {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 1rem;
+  margin-left: 70px;
+  width: 60%;
+}
+
+.help-center h3,
+.social-media h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.acc-manager,
+.tolfree {
+  margin-bottom: 1rem;
+}
+
+.cnts {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.cnts img {
+  margin-right: 1rem;
+}
+
+
+
+/* Optional styles for visual consistency */
+.image img {
+  width: 50px;
+  height: 50px;
+}

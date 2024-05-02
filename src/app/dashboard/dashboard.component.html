@@ -1,0 +1,92 @@
+<div class="header">
+  <div class="welcome">Welcome to InsuredLife Insurance</div>
+  <div class="info">
+    <div class="logo"></div>
+    <div class="emp-info">
+      <table>
+        <thead>
+          <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Company Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{userDetails.empId}}</td>
+            <td>{{userDetails.name}}</td>
+            <td>{{userDetails.company}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="policies">
+    <div class="policy">
+      <div class="policy-title">Policy Information</div>
+      <div class="policy-detail">
+        <div class="left">
+          <div><span>Insurer:</span><span>{{userPolicies.insurer}}</span></div>
+          <div><span>Type:</span><span>{{userPolicies.type}}</span></div>
+          <div><span>Policy period:</span><span>{{userPolicies.end_date}}</span></div>
+        </div>
+        <div class="right">
+          <div class="explanation">
+            <p>Policy Enrollment Details</p>
+          </div>
+          <div class="image">
+            <img src="assets/policy.png" alt="" height="27" width="25" alt="" height="50" width="50">
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <a href="">Family Details</a>
+        <a href="">Documents</a>
+        <a href="">Claims</a>
+        <a href="">Ecard</a>
+        <a href="">Network Hospital</a>
+      </div>
+    </div>
+    <!-- Repeat the above 'policy' block for each policy -->
+  </div>
+
+  <div class="contacts">
+    <div class="help-center">
+      <h3>Help Center</h3>
+      <div class="acc-manager">
+        <h4>Kajapathy-Account Manager</h4>
+        <div class="cnts">
+          <img src="assets/call.png" alt="" height="25" width="25">
+          <span>7397647898</span>
+        </div>
+        <div class="cnts">
+          <img src="assets/gmail.png"alt="" height="25" width="25">
+          <span>kajapathyfuturisk.in</span>
+        </div>
+      </div>
+      <!-- <div class="tolfree">
+        <h3>Toll Free Helpline</h3>
+        <div class="lines">
+          <img src="assets/call.png" alt="" height="25" width="25">
+          <span>1800-1034-569</span>
+        </div>
+        <div class="lines">
+          <img src="assets/gmail.png" alt="" height="25" width="25">
+          <span>servicehelpdeskfuturisk.in</span>
+        </div>
+      </div>
+    </div> -->
+    <div class="social-media">
+      <div class="cnts">
+        <div><a href="https://www.linkedin.com/company/ilink-digital-thinkingbeyond/mycompany/"><img src="assets/linkedin.png" alt="" width="20" height="20"></a></div>
+        <div><a href="https://www.youtube.com/user/ilinkinfo/featured"><img src="assets/youtube.png" alt="" width="20" height="20"></a></div>
+        <div><a href="https://twitter.com/ilink_digital"><img src="assets/twitter.png" alt="" width="20" height="20"></a></div>
+        <div><a href="https://www.instagram.com/ilinkdigital/"><img src="assets/instagram.png" alt="" width="20" height="20"></a></div>
+        <div><a href="https://www.facebook.com/iLink.digital"><img src="assets/facebook.png" alt="" width="20" height="20"></a></div>
+      </div>
+    </div>
+  </div>
+</div>
